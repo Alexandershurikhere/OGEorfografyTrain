@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/premiumRoot"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:padding="24dp"
+
+    android:background="@color/background">
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardBackgroundColor="@color/surface">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            android:gravity="center"
+
+            android:padding="28dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="⭐ Premium"
+
+                android:textSize="28sp"
+                android:textStyle="bold"
+
+                android:textColor="@color/text_primary" />
+
+            <TextView
+
+                android:id="@+id/premiumStatus"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_marginTop="20dp"
+
+                android:textSize="17sp"
+
+                android:textColor="@color/text_secondary"
+
+                android:gravity="center" />
+
+            <com.google.android.material.button.MaterialButton
+
+                android:id="@+id/premiumButton"
+
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+
+                android:layout_marginTop="28dp"
+
+                android:text="Активировать Premium"
+
+                android:textSize="16sp"
+
+                app:cornerRadius="16dp"
+                app:backgroundTint="@color/primary" />
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
